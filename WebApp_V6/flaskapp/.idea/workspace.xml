@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="881569f8-73b1-45d8-8b89-5ad4d861c124" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../allrecipes_clean_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../allrecipes_clean_data.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allrecipes_filter_ingredients.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../allrecipes_filter_ingredients.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allrecipes_scrape_ingredients.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../allrecipes_scrape_ingredients.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allrecipes_scrape_nutrfacts.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../allrecipes_scrape_nutrfacts.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allrecipes_scrape_recipenames.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../allrecipes_scrape_recipenames.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/allrecipes_ingreds_db_all.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/allrecipes_ingreds_db_all.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/allrecipes_nutr_labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/allrecipes_nutr_labels.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/best_recipes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/best_recipes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/bestlist.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/bestlist.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/better_recipes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/better_recipes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/betterlist.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/betterlist.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/db_labels.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/db_labels.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/db_nutr_sqrt.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/db_nutr_sqrt.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/distpca.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/distpca.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/firstchoice_ind.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/firstchoice_ind.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/gmm4.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/gmm4.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/ingred_similarity.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/ingred_similarity.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/ingreds_db_cleaned.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/ingreds_db_cleaned.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/ingredvectorizer.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/ingredvectorizer.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/maindish_indices.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/maindish_indices.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/maindish_indices_ex.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/maindish_indices_ex.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/oklist.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/oklist.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/recipe_ingred_word2vec_lg/meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/recipe_ingred_word2vec_lg/meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/recipe_ingred_word2vec_lg/tokenizer" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/recipe_ingred_word2vec_lg/tokenizer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/recipe_ingred_word2vec_lg/vocab/key2row" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/recipe_ingred_word2vec_lg/vocab/key2row" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/recipe_ingred_word2vec_lg/vocab/lexemes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/recipe_ingred_word2vec_lg/vocab/lexemes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/recipe_ingred_word2vec_lg/vocab/strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/recipe_ingred_word2vec_lg/vocab/strings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/recipe_ingred_word2vec_lg/vocab/vectors" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/recipe_ingred_word2vec_lg/vocab/vectors" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/recipe_vector_lg/meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/recipe_vector_lg/meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/recipe_vector_lg/tokenizer" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/recipe_vector_lg/tokenizer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/recipe_vector_lg/vocab/key2row" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/recipe_vector_lg/vocab/key2row" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/recipe_vector_lg/vocab/lexemes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/recipe_vector_lg/vocab/lexemes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/recipe_vector_lg/vocab/strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/recipe_vector_lg/vocab/strings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/recipe_vector_lg/vocab/vectors" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/recipe_vector_lg/vocab/vectors" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/reclist.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/reclist.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/similar_recipes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/similar_recipes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_data/standardscaler.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/../app_data/standardscaler.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.views.py.swp" beforeDir="false" afterPath="$PROJECT_DIR$/.views.py.swp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nutrition_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/nutrition_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/.index.html.swo" beforeDir="false" afterPath="$PROJECT_DIR$/templates/.index.html.swo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/.index.html.swp" beforeDir="false" afterPath="$PROJECT_DIR$/templates/.index.html.swp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/firstchoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/firstchoice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/secondchoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/secondchoice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recipe_choice_validation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../recipe_choice_validation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recipe_exploratory_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../recipe_exploratory_analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../run.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1520390342">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.68" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="972" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flaskapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flaskapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="881569f8-73b1-45d8-8b89-5ad4d861c124" name="Default Changelist" comment="" />
+      <created>1538027386274</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538027386274</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="965" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="R Packages" />
+      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+</project>

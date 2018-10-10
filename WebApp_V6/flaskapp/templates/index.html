@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>EatingForTwo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet"> 
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/dashboard.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
+
+      <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    {% endblock %}
+  </head>
+
+  <body>
+    {% block jumbotron %}
+    <nav class="navbar navbar-expand-lg navbar-light" style="margin-bottom:2em;background-color:#28a745;">
+	      <h1 class="navbar-brand" style="color:white;font-size:2em;">Eating for Two: Balanced Diet Recommendation for Pregnant Women</h1>
+	      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	          <div class="navbar-nav">
+		            <a class="nav-item nav-link" href="./index" style="color:white;">refresh</a>
+		            <!-- <a class="nav-item nav-link" href="./about" style="color:white;">about</a> -->
+	          </div>
+	      </div>
+    </nav>
+    {% endblock %}
+
+    <div class="container-fluid">
+        <div class="row">
+	          {% block history %}
+            <div class="col-md-3">
+	              <h3>Step 1: Choose your lunch</h3>
+                <div class="list-group">
+	                  {% for dish in maindishes %}
+	                  <form action = "/firstchoice" method="GET">
+	    	                <button type="submit" name="recipename" value={{dish.replace(' ','_')}} class="list-group-item list-group-item-action">{{dish.title()}}</button>
+	                  </form>
+	                  {% endfor %}
+	                  <!-- <form action = "" method="POST"> -->
+		                <!-- <div><h3>Food Allergies!</h3> -->
+		                <!-- <input type="text" id="recipename" placeholder="Peanut", name="allergy"> -->
+		                <!-- <button type="submit">Submit</button> -->
+		                <!-- </div> -->
+	                  <!-- </form>  -->
+	              </div>
+            </div>
+	          {% endblock %}
+
+
+            {% block recommendation %}
+            <div class="col-md-4">
+                <!--  <h3>Recipe Recommendation</h3>-->
+                <h3>Step 2: Dinner recommended</h3>
+                <p></p>
+                <p></p>
+                <p style="text-align:left;font-size:110%;color:blue"><b>
+                    {% block currentRecipe %}
+                    {% endblock %}
+                </b></p>
+                <p style="text-align:left;font-size:110%;color:red"><b>
+                    {% block globalOptimal %}
+                    {% endblock %}
+                </b></p>
+                <p style="height:2px; visibility:hidden; margin-bottom:0px;"> </p>
+
+                <!-- <h4>Surprise Me! <span id="chooseMyself"></span></h4> -->
+                <h3 style="color:black">Step 3: More dinner options  </h3>
+                <!-- <div class="row placeholders"> -->
+                    <!-- <div class="col-md-10 placeholder"> -->
+                <p style="font-size: 120%"> Get more personalized dinner options based on ingredient similarity of your lunch?</p>
+                        <form action="/secondchoice" method="POST">
+                            <div class="custom-range">
+                            <!-- <div class="range-slider"> -->
+                                <p style="font-size:100%;color:black">
+                                    <input class="custom-range" type="range" min="0" max="1" step="0.05" value={{similarity}} style="width: 100%" id="myRange", name="similarity">
+                                    <!-- <p style="text-align: center"><input type="submit" value="Go!"></p> -->
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div><p style="text-align: left"> Similar</p></div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div><p style="text-align: center"><input type="submit", value="Go!"></p></div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div><p style="text-right: right">Different</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <p>Similar <input type="submit" value="Go!" style="center"> Different</p> -->
+                                </p>
+                            </div>
+                        </form>
+
+                        <!-- </div> -->
+
+                        <!-- </div> -->
+
+
+                <div class="table-responsive" style="color:black">
+                    <p style="text-align:left;font-size:110%;color:black">
+                        {% block okrecs2 %}
+                        {% endblock %}
+                    </p>
+                </div>
+                <div style="position: absolute; bottom: 20px; font-size: 120%">
+                    <font color="red"><sup>*</sup>Balance Index (BI)</font>: a diet quality measurement on how well a set of foods aligns with daily values recommendation (for pregnant women).
+                </div>
+	              {% endblock %}
+            </div>
+
+
+		        {% block BIanalysis %}
+            <div class="col-md-5">
+                <h3>Balance Index (BI)<sup>*</sup> Breakdown</h3>
+	              <!-- <div class="row placeholders"> -->
+                <!-- <div class="col-md-7 placeholder"> -->
+		                {% block nutranalysis %}
+		                {% endblock %}
+            </div>
+                <!-- <div class="col-md-5 placeholder"> -->
+		            <!-- {% block ingredcomp %} -->
+		            <!-- {% endblock %} -->
+                <!-- </div> -->
+		        {% endblock %}
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+{% block currentRecipe %}
+{{ currentBI }}
+{% endblock %}
+
+{% block globalOptimal %}
+{{ bestBI }}
+{% endblock %}
+
+{% block nutranalysis %}
+<img src="data:image/png;base64,{{ plot_url }}" class="img-responsive" style="width:100%;">
+{% endblock %}
+
+{% block okrecs %}
+{% for rec in okrecs %}
+<form action = "/secondchoice" method="GET">
+	  <button style="color:black" type="submit" name="recipename" value={{rec.replace(' ', '_')}} class="list-group-item list-group-item-action">{{rec.title()}}</button>
+</form>
+{% endfor %}
+{% endblock %}

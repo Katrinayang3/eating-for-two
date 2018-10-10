@@ -1,0 +1,21 @@
+.site-title {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.site-tag {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: green;
+}
+
+.navbar {
+  font-family: 'Quicksand', sans-serif;
+}
